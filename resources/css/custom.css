@@ -1,0 +1,60 @@
+li {
+    position: relative;
+}
+
+i {
+    font-size:20px;
+   
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width:150px;
+    padding:15px;
+}
+
+.sub-menu li {
+    padding-bottom:10px;
+}
+
+li:hover .sub-menu{ 
+    display: block;
+    
+
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-field {
+    padding-left: 2.5rem; /* Add padding to make space for the SVG */
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.5rem; /* Adjust as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the SVG doesn't block input interactions */
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#search-form {
+    width: calc(100% - 240px);
+}
+
+.black {
+    background-color: rgb(0 0 0 / 80%);
+}
+
+@media only screen and (max-width: 724px) {
+    #mobile-pop-out .mobile-menu #mobile-menu #menu-mobile-menu li .sub-menu     {
+      background-color: white;
+      z-index:99
+    }
+  }
